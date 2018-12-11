@@ -13,7 +13,7 @@ Vitesse creation_vitesse (dimX, dimY) {
     return vitesses;
 }
 
-void moyenne (double **mat, double **mat_moyenne, int dimx, int dimy) { //Rentre le résultat de la moyenne dans une matrice "moyenne" qu'on lui donne (plus malin que de créer une matrice à chaque appel)
+void moyenne (double **mat, double **mat_moyenne, int dimx, int dimy) { //Rentre le rÃ©sultat de la moyenne dans une matrice "moyenne" qu'on lui donne (plus malin que de crÃ©er une matrice Ã  chaque appel)
     int k = 0;
     int j;
 
@@ -24,22 +24,22 @@ void moyenne (double **mat, double **mat_moyenne, int dimx, int dimy) { //Rentre
                 mat_moyenne[k][j] = (mat[k-1][j] + mat[k][j+1] + mat[k+1][j] + mat[k][j-1])/4;
             }
             else { //On est sur les bords
-                if ( k==0 && j==0 ) { //Coins en haut à gauche
+                if ( k==0 && j==0 ) { //Coins en haut Ã  gauche
                     mat_moyenne[k][j] = (mat[k+1][j] + mat[k][j+1])/2;
                 }
-                else if ( k==dimx-1 && j==0 ) { //Coin en bas à gauche
+                else if ( k==dimx-1 && j==0 ) { //Coin en bas Ã  gauche
                     mat_moyenne[k][j] = (mat[k-1][j] + mat[k][j+1])/2;
                 }
-                else if ( k==0 && j==dimy-1 ) { //Coin en haut à droite
+                else if ( k==0 && j==dimy-1 ) { //Coin en haut Ã  droite
                     mat_moyenne[k][j] = (mat[k+1][j] + mat[k][j-1])/2;
                 }
-                else if ( k==dimx-1 && j==dimy-1 ) {//Coin en bas à droite
+                else if ( k==dimx-1 && j==dimy-1 ) {//Coin en bas Ã  droite
                     mat_moyenne[k][j] = (mat[k-1][j] + mat[k][j-1])/2;
                 }
-                else if ( (k!=0 && k!=dimx-1) && j==0 ) { //Bord à gauche sans les coins
+                else if ( (k!=0 && k!=dimx-1) && j==0 ) { //Bord Ã  gauche sans les coins
                     mat_moyenne[k][j] = (mat[k-1][j] + mat[k][j+1] + mat[k+1][j])/3;
                 }
-                else if ( (k!=0 && k!=dimx-1) && j==dimy-1) { //Bord à droite sans les coins
+                else if ( (k!=0 && k!=dimx-1) && j==dimy-1) { //Bord Ã  droite sans les coins
                     mat_moyenne[k][j] = (mat[k-1][j] + mat[k][j-1] + mat[k+1][j])/3;
                 }
                 else if ( (j!=0 && j!=dimy-1) && k==0) {//Bord en haut sans les coins
@@ -59,8 +59,8 @@ void U_et_V (int** mat1, int** mat2, Gradient* Grad, Vitesse* vitesses, int pas)
     int alpha = 1;
     int dimX = Grad->dimX;
     int dimY = Grad->dimY;
-    while (n<=10000) {
-        if (n==0) { //Etat initial : U_moyen et V_moyen sont égaux à 1 et alpha = 3 (on le choisit)
+    while (n<=100) {
+        if (n==0) { //Etat initial : U_moyen et V_moyen sont Ã©gaux Ã  1 et alpha = 3 (on le choisit)
             calcul_gradient(mat1,mat2,Grad,pas);
             for (i=0 ; i<dimX ; i++) {
                 for (j=0 ; j<dimY ; j++) {
