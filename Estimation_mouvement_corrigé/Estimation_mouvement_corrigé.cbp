@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Estimation_mouvement_corrigé" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Estimation_mouvement_corrigé" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Estimation_mouvement_corrigé" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Gradient.h" />
+		<Unit filename="Image_binaire_ligne_finale.bmp" />
+		<Unit filename="Image_binaire_ligne_initiale.bmp" />
+		<Unit filename="Projet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Projet.h" />
+		<Unit filename="Rectangle_noir_final.bmp" />
+		<Unit filename="Rectangle_noir_initial.bmp" />
+		<Unit filename="Support_image_binaire.bmp" />
+		<Unit filename="U_et_V.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="U_et_V.h" />
+		<Unit filename="gradient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="myBmpGris.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="myBmpGris.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
