@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1545057994 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\gradient.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Projet.h"
+	"myBmpGris.h"
+	"Gradient.h"
+
+1545225547 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\projet.h
+	"myBmpGris.h"
+
+1544199161 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\mybmpgris.h
+	<stdlib.h>
+	<stdio.h>
+
+1545247894 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Interaction_Utilisateur.h"
+
+1545058056 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\gradient.h
+
+1545247322 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\u_et_v.h
+	"Gradient.h"
+
+1544199161 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\mybmpgris.c
+	"myBmpGris.h"
+
+1545147475 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\projet.c
+	"Projet.h"
+	<stdlib.h>
+	<stdio.h>
+
+1545220946 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\u_et_v.c
+	"U_et_V.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1545057355 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\echantillonnage.h
+
+1545152700 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\echantillonage.c
+	"Echantillonnage.h"
+	"Projet.h"
+
+1545247894 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\interpolation.h
+	"Echantillonnage.h"
+	"math.h"
+
+1545251058 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\interpolation.c
+	"Interpolation.h"
+	"Echantillonnage.h"
+
+1545247894 c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\interaction_utilisateur.h
+	"Echantillonnage.h"
+	"Gradient.h"
+	"Interpolation.h"
+	"myBmpGris.h"
+	"U_et_V.h"
+
+1545247894 source:c:\users\zangrilliclement\desktop\estimation_mouvement_corrigé\interaction_utilisateur.c
+	"Interaction_Utilisateur.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
